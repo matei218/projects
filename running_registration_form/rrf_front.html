@@ -1,0 +1,14 @@
+<h1>Runner Registration Form</h1>
+<form id="runnerForm">
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required><br><br>
+  
+    <label for="registrationType">Registration Type:</label>
+    <select id="registrationType" name="registrationType">
+      <option value="early">Early</option>
+      <option value="late">Late</option>
+    </select>
+  
+  <input type="button" value="Get Registration Time" onclick="getRegistrationTime()">
+</form>
+<div id="registrationResult"></div>

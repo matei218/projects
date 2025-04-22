@@ -1,0 +1,84 @@
+:root {
+    --padding-margin-default: 0;
+    --custom-padding: 10px;
+    --custom-border-radius: 4px;
+    --main-bg-color: #e0f7fa;
+    --bg-color-one: #b2ebf2;
+    --bg-color-two: #ffe57f;  
+    --bg-color-three: #ff9a8d;
+    --text-color: #333;
+  }
+
+.darkmode{
+    --main-bg-color: #121212;
+    --bg-color-one: #1e1e1e;
+    --bg-color-two: #b68dff; 
+    --bg-color-three: #04b3a2;
+    --text-color: #e0e0e0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    padding: var(--padding-margin-default);
+    margin: var(--padding-margin-default);
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: default;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    gap: 20px;
+}
+
+#container{
+    max-width: 300px;
+    min-height: 700px;
+    background-color: var(--bg-color-two);
+    border-radius: var(--custom-border-radius);
+}
+
+.theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: var(--padding-margin-default);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+}
+
+.theme-switch span:last-child{
+    display: none;
+}
+
+.darkmode .theme-switch span:first-child{
+    display: none;
+}
+
+.darkmode .theme-switch span:last-child{
+    display: block;
+}
+
+section{
+    padding: var(--custom-padding);
+}
+
+h1{
+    padding: var(--padding-margin-default);
+    margin: var(--padding-margin-default);
+}
+
+p{
+    padding: var(--custom-padding);
+    border-radius: var(--custom-border-radius);
+    background-color: var(--bg-color-three);
+}

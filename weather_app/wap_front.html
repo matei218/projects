@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <section class="front_face">
+      <div class="search_field">
+        <input type="text" placeholder="enter your city name" spellcheck="true">
+        <button class="button">
+            <img src="media/icons8-search-50.png">
+        </button>
+        <button class="button_clear">
+            <img src="media/icons8-clear-50.png">
+        </button>
+      </div>
+      <div class="input_check_message">No city matches your search!</div>
+      <div class="input_check_length">Please add a city name!</div>
+      <div class="weather_container">
+        <div class="main_details">
+            <img src="" class="weather_image">
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+        </div>
+        <div class="details">
+            <div class="row">
+                <div class="col">
+                    <img src="media/icons8-wet-96.png">
+                    <div>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="media/icons8-windsock-96.png">
+                    <div>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="media/icons8-sunrise-64.png">
+                    <div>
+                        <p class="sunrise"></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="media/icons8-sunset-64.png">
+                    <div>
+                        <p class="sunset"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
