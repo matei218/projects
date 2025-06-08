@@ -1,3 +1,5 @@
+// try it on https://www.emag.ro/laptopuri/c?ref=hp_menu_quick-nav_1_1&type=category
+
 function startTracker() {
   let displayBox;
   const existingBox = document.getElementById('top-products');
